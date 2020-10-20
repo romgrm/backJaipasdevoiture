@@ -5,7 +5,7 @@ public class Vehicule {
     String couleur;
     int niveauCarburant;
     boolean estLouee;
-    Client locataire;
+    Client locataire; // Peut recuper un client
 
     public Vehicule(String marque, String couleur, int niveauCarburant) {
         this.marque = marque;

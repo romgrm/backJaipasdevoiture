@@ -22,8 +22,8 @@ public final class App {
         Vehicule citroen = new Vehicule("Citroen", "grise", 16);
 
         // Creation client
-        Client bobby = new Client("Bobby", "Nantes");
-        Client alex = new Client("Alex", "Brest");
+        Client bobby = new Client("Bobby");
+        Client alex = new Client("Alex");
 
         // Ajout vehicules
         nantesAgence.ajouterVehicule(mazda);

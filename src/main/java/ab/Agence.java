@@ -49,7 +49,7 @@ public class Agence {
         System.out.println(liste);
     }
 
-    void louerVehicule(Client client, Vehicule vehicule) { // Prends en argument un clien et une voiture
+    void louerVehicule(Client client, Vehicule vehicule) { // Prends en argument un client et une voiture
         for (Vehicule i : this.stockVehicules) {
             if (i.estLouee == true || i.locataire == client) {
                 System.out.println(
