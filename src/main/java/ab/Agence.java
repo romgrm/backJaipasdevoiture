@@ -27,8 +27,9 @@ public class Agence {
 
         // pour chaque vehicule du vehiculeStock
 
-        for (Vehicule i : this.stockVehicules) { // Pour chaque vehicule dans stockVehicules, ajouter nom à la liste
-            liste += i.marque + " ";
+        for (Vehicule voiture : this.stockVehicules) { // Pour chaque vehicule dans stockVehicules, ajouter nom à la
+                                                       // liste
+            liste += voiture.marque + " ";
 
         }
         System.out.println(liste);
@@ -40,9 +41,10 @@ public class Agence {
 
         // pour chaque vehicule du vehiculeStock
 
-        for (Vehicule i : this.stockVehicules) { // Pour chaque vehicule dans stockVehicules, ajouter marque à la liste
-            if (i.estLouee == false) {
-                liste += i.marque + " ";
+        for (Vehicule voiture : this.stockVehicules) { // Pour chaque vehicule dans stockVehicules, ajouter marque à la
+                                                       // liste
+            if (voiture.estLouee == false) {
+                liste += voiture.marque + " ";
             }
 
         }
@@ -50,10 +52,10 @@ public class Agence {
     }
 
     void louerVehicule(Client client, Vehicule vehicule) { // Prends en argument un client et une voiture
-        for (Vehicule i : this.stockVehicules) {
-            if (i.estLouee == true || i.locataire == client) {
-                System.out.println(
-                        "La voiture " + (i.marque) + " a déja été louée à " + (i.locataire.nomClient).toString());
+        for (Vehicule voiture : this.stockVehicules) {
+            if (voiture.estLouee == true || voiture.locataire == client) {
+                System.out.println("La voiture " + (voiture.marque) + " a déja été louée à "
+                        + (voiture.locataire.nomClient).toString());
                 break;
             } else {
                 vehicule.estLouee = true;
